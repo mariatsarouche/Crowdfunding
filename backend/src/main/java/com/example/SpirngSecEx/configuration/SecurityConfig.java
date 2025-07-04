@@ -104,7 +104,7 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         final CorsConfiguration corsConfiguration = new CorsConfiguration();
-        corsConfiguration.setAllowedOrigins(Arrays.asList("http://20.238.52.1:3000" ,"http://localhost:3000", "http://vue.kaparos.ip-ddns.com", "http://spring.kaparos.ip-ddns.com", "http://4.223.160.109:80", "http://4.223.160.109", "http://172.161.49.151"));
+        corsConfiguration.setAllowedOrigins(Arrays.asList("http://20.238.52.1:3000" ,"http://localhost:3000", "http://vue.kaparos.ip-ddns.com", "http://spring.kaparos.ip-ddns.com", "http://4.223.160.109:80", "http://172.161.49.151"));
         corsConfiguration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE"));
         corsConfiguration.setAllowedHeaders(Arrays.asList("*"));
         corsConfiguration.setAllowCredentials(true);
